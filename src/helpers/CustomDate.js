@@ -1,9 +1,12 @@
 export function myDateFormat(inputDate) {
-    let day = getDayName(new Date(inputDate).getDay());
-    let date = new Date(inputDate).getDate();
-    let month = getMonthName(new Date(inputDate).getMonth());
-    let year = new Date(inputDate).getFullYear();
-    return `${day}, ${date} ${month} ${year}`;
+
+  let day = getDayName(new Date(inputDate).getDay());
+  let date = new Date(inputDate).getDate();
+  let month = getMonthName(new Date(inputDate).getMonth());
+  let year = new Date(inputDate).getFullYear();
+  return `${day}, ${date} ${month} ${year}`;
+
+
 }
 
 export function getDayName(dayNum) {
